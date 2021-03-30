@@ -1,0 +1,39 @@
+.main{
+    width: 100%;
+    height: 100vh;
+}
+
+.main .bgcanvas{
+    /* background-color: yellow; */
+    width: 90%;
+    height: 80vh;
+    border: #EBEBEB 3px solid;
+    position: relative;
+    top: 3%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .bgcanvas .carousel{
+    width: 50%;
+    height: 70vh;
+    background-color: wheat;
+    margin-left: 50px;
+    margin-right: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.main .bgcanvas .search-box{
+    width: 50%;
+    height: 70vh;
+    background-color: #707070;
+    margin-right:50px;
+    margin-left:25px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

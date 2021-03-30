@@ -1,0 +1,51 @@
+.search-second-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blanchedalmond; */
+    border: black 5px solid;
+    border-radius: 12px;
+    width: 85%;
+    height: 60vh;
+}
+
+.search-second-box input{
+    width: 500px;
+    height: 60px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.search-second-box button{
+    padding: 13px;
+    font-size: 25px;
+    outline: none;
+    border-radius: 6px;
+    background-color: transparent;
+    border: white solid 3px;
+    color: white;
+}
+
+.change-button{
+    position: absolute;
+    top: 20%;
+    border:3px white solid;
+    padding: 12px;
+    border-radius: 33px;
+}
+
+.change-button .span1{
+    border-right: 3px solid white;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.change-button .span2{
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+

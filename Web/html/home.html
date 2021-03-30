@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live & Learn</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- header css -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/hambuger.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/search-box.css">
+    <link rel="stylesheet" href="../css/change-mode.css">
+    <link rel="stylesheet" href="../css/menu.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Header -> LOGO,變更顏色按鈕 -->
+    <header>
+        <!-- 變更顏色按鈕 -->
+        <div class="change-mode">
+            <!-- <button>變換模式</button> -->
+            <input type="checkbox" id="myCheck" onclick="changemode()">
+        </div>
+        <!-- LOGO -->
+        <div class="logo"><a href="#">Live&Learn</a></div>
+        <!-- nav-bar -->
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- 首頁主畫面 -> 輪播,搜尋欄位 -->
+    <div class="main">
+        <!-- 白色方框框 -->
+        <div class="bgcanvas">
+                    <!-- 投影片 -->
+            <div class="carousel">
+                <div class="slides">
+                    <!--radio buttons start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!--radio buttons end-->
+        
+                    <!--slide image start-->
+                    <div class="slide first">
+                        <img src="/images/cat01.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/cat02.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/cat03.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/cat04.jpg" alt="">
+                    </div>
+                    <!--slide image end-->
+        
+                    <!--automatic navigation start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn-1"></div>
+                        <div class="auto-btn-2"></div>
+                        <div class="auto-btn-3"></div>
+                        <div class="auto-btn-4"></div>
+                    </div>
+                    <!--automatic navigation end-->
+                </div>
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
+            </div>
+            <!-- 投影片 end -->
+            <div class="search-box">
+                <div class="change-button">
+                    <h3>
+                        <span class="span1">搜尋</span>
+                        <span class="span2">探索</span>
+                    </h3>
+                </div>
+                <div class="search-second-box">
+                    <form action="">
+                        <input type="text" placeholder="輸入課程">
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 漂浮hambuger -->
+    <div class="nav-line">
+        <div class="hambuger">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+    </div>
+    
+    <!-- menu 頁面 -->
+    <menu class="menu">
+        <div class="menu-box">
+            <div class="menu-box1">
+                <ul>
+                    <li><a href="#">首頁</a></li>
+                    <li><a href="#">課程</a></li>
+                    <li><a href="#">師資</a></li>
+                    <li><a href="#">開課</a></li>
+                    <li><a href="#">會員</a></li>
+                    <li><a href="#">人才招募</a></li>
+                </ul>
+            </div>
+            <div class="menu-box2">
+                <ul>
+                    <div class="class">
+                        <li class="class"><a href="#">線上課程</a></li><span><i class="fas fa-caret-left"></i></span>
+                    </div>
+                    <li><a href="#">直播課程</a></li>
+                    <li><a href="#">實作課程</a></li>
+                    <li><a href="#">就業養成</a></li>
+                </ul>
+            </div>
+            <div class="menu-box3"></div>
+        </div>
+    </menu>
+
+    <script src="../js/slider.js"></script>
+    <script src="../js/hambuger.js"></script>
+    <script src="../js/change-mode.js"></script>
+</body>
+</html>

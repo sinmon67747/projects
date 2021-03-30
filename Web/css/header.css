@@ -1,0 +1,41 @@
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* position: fixed; */
+}
+
+header .change-mode button{
+    padding:12px;
+    font-size: 20px;
+    width: 120px;
+    border: #EBEBEB 1px solid;
+    border-radius: 8px;
+    color: #EBEBEB;
+    background-color: transparent;
+    letter-spacing: 3px;
+}
+
+
+header .logo{
+    color: white;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 30px;
+}
+
+header .nav-bar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .nav-bar ul li{
+    padding-right: 20px;
+}
+
+header .nav-bar ul li a{
+    font-size: 30px;
+}

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#2A2828 ;
+}
+
+a{
+    text-decoration: none;
+    color: #EBEBEB;
+}
+
+ul{
+    /* font-style: none; */
+    list-style:none;
+}

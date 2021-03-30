@@ -1,0 +1,96 @@
+menu{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #2A2828;
+    z-index: 2;
+    opacity: 0.8;
+    transition: 2s;
+}
+
+.menu-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: brown; */
+    width: 25%;
+    height: 80vh;
+    border-left: 3px solid #707070;
+}
+.menu-box1 ul li a{
+    font-size: 30px;
+    line-height: 300%;
+    position: relative;
+    padding: 2px 0;
+}
+
+.menu-box1 ul li a::before{
+    content: "";
+    width: 150%;
+    height: 2px;
+    background-color: #EBEBEB;
+    position: absolute;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: 0.5s;
+    transform-origin: left;
+}
+
+.menu-box1 ul li a:hover::before{
+    transform: scaleX(1);
+}
+
+
+.menu-box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color:burlywood; */
+    width: 25%;
+    height: 100vh;
+}
+.menu-box2 ul li{
+    font-size: 30px;
+    /* border: 2px solid #EBEBEB; */
+    margin: 40px 10px;
+    padding: 15px;
+    transition: 1s;
+}
+.menu-box2 ul li:nth-child(1){
+    border: 2px #EBEBEB solid;
+}
+.class{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.class .fas{
+    color: #EBEBEB;
+    font-size: 50px;
+}
+.menu-box3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: chartreuse;
+    width: 25%;
+    height: 100vh;
+}
+
+
+/* 切換menu  */
+.change-menu{
+    right: 0;
+    opacity: 1;
+}
